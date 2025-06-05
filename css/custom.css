@@ -1,0 +1,752 @@
+/* css/styles.css */
+
+/* ==========================================================================
+   EmpleosPE - Main Stylesheet
+   
+   FUTURE MODULAR STRUCTURE:
+   1. Base (variables + typography + reset)        → base/_variables.scss + base/_typography.scss + base/_reset.scss
+   2. Layout (header + hero + main + footer)       → layout/_header.scss + layout/_hero.scss + layout/_main.scss + layout/_footer.scss
+   3. Components (cards + forms + filters + etc)   → components/_cards.scss + components/_forms.scss + components/_filters.scss
+   4. Pages (home-specific styles)                 → pages/_home.scss (cuando sea necesario)
+   
+   CURRENT STRUCTURE (UNIFIED):
+   ========================================================================== */
+
+/* ==========================================================================
+   1. BASE
+   Variables, Typography, Reset, Base Styles
+   FUTURE: base/_variables.scss + base/_typography.scss + base/_reset.scss
+   ========================================================================== */
+
+/* 1.1 VARIABLES & CUSTOM PROPERTIES */
+:root {
+    /* Colors */
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --accent-color: #f59e0b;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    --info-color: #06b6d4;
+    --light-color: #f8fafc;
+    --dark-color: #1e293b;
+    --border-color: #e2e8f0;
+    --text-muted: #64748b;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    /* Border Radius */
+    --border-radius: 12px;
+    --border-radius-sm: 8px;
+
+    /* Typography (for future base/_typography.scss) */
+    --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    --font-size-base: 1rem;
+    --line-height-base: 1.6;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Spacing (for future consistency) */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+}
+
+/* 1.2 RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1.3 TYPOGRAPHY */
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: var(--line-height-base);
+    font-size: var(--font-size-base);
+}
+
+/* ==========================================================================
+   2. LAYOUT
+   Header, Hero, Main Container, Footer
+   FUTURE: layout/_header.scss + layout/_hero.scss + layout/_main.scss + layout/_footer.scss
+   ========================================================================== */
+
+/* 2.1 HEADER LAYOUT - FUTURE: layout/_header.scss */
+.navbar {
+    background: linear-gradient(
+        135deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 100%
+    );
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: var(--font-weight-bold);
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: var(--font-weight-medium);
+    padding: var(--spacing-sm) var(--spacing-md) !important;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white !important;
+}
+
+.btn-join {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white !important;
+    font-weight: var(--font-weight-semibold);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+}
+
+.btn-join:hover {
+    background: white;
+    color: var(--primary-color) !important;
+    transform: translateY(-1px);
+}
+
+/* 2.2 HERO SECTION LAYOUT - FUTURE: layout/_hero.scss */
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 100%
+    );
+    color: white;
+    padding: var(--spacing-2xl) 0 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: var(--spacing-xl);
+}
+
+/* 2.3 MAIN CONTAINER LAYOUT - FUTURE: layout/_main.scss */
+.main-container {
+    padding: var(--spacing-xl) 0;
+    min-height: calc(100vh - 200px);
+}
+
+/* ==========================================================================
+   3. COMPONENTS
+   Cards, Forms, Filters, Buttons, Sidebars, etc.
+   FUTURE: components/_cards.scss + components/_forms.scss + components/_filters.scss + components/_buttons.scss + components/_sidebars.scss
+   ========================================================================== */
+
+/* 3.1 FORM COMPONENTS - FUTURE: components/_forms.scss */
+.search-container {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    max-width: 600px;
+}
+
+.search-input {
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-md);
+    font-size: var(--font-size-base);
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.search-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    outline: none;
+}
+
+.sort-select {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    padding: var(--spacing-sm) 0.75rem;
+    background: white;
+    color: var(--dark-color);
+    font-size: 0.875rem;
+}
+
+.salary-inputs {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.salary-input {
+    flex: 1;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.875rem;
+}
+
+/* 3.2 BUTTON COMPONENTS - FUTURE: components/_buttons.scss */
+.btn-search {
+    background: var(--accent-color);
+    border: none;
+    color: white;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-weight-semibold);
+    transition: all 0.3s ease;
+}
+
+.btn-search:hover {
+    background: #d97706;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-apply {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem var(--spacing-lg);
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: all 0.3s ease;
+}
+
+.btn-apply:hover {
+    background: #5855eb;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.bookmark-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.bookmark-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.clear-filters {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    transition: all 0.2s ease;
+}
+
+.clear-filters:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+    color: var(--primary-color);
+}
+
+/* 3.3 FILTER COMPONENTS - FUTURE: components/_filters.scss */
+.filter-sidebar {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+    height: fit-content;
+    position: sticky;
+    top: 120px;
+}
+
+.filter-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--dark-color);
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.filter-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.filter-section:last-child {
+    margin-bottom: 0;
+}
+
+.filter-section-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--dark-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: var(--spacing-sm) 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-option:hover {
+    color: var(--primary-color);
+}
+
+.filter-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-color);
+}
+
+.filter-count {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-left: auto;
+}
+
+.salary-range {
+    margin-top: var(--spacing-md);
+}
+
+/* 3.4 CARD COMPONENTS - FUTURE: components/_cards.scss */
+.jobs-content {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.content-header {
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+    background: white;
+}
+
+.results-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.results-count {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--dark-color);
+}
+
+.results-meta {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.job-listings {
+    padding: 0;
+}
+
+.job-card {
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.job-card:last-child {
+    border-bottom: none;
+}
+
+.job-card:hover {
+    background-color: #f8fafc;
+    transform: translateX(4px);
+}
+
+.job-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: var(--font-weight-semibold);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job-title {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--dark-color);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.3;
+}
+
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.job-meta-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.job-salary {
+    color: var(--success-color);
+    font-weight: var(--font-weight-semibold);
+}
+
+.job-description {
+    color: var(--text-muted);
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-md);
+}
+
+.job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.job-tag {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary-color);
+    padding: var(--spacing-xs) 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-medium);
+}
+
+.job-tag.featured {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success-color);
+}
+
+.job-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-md);
+}
+
+.job-stats {
+    display: flex;
+    gap: var(--spacing-md);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* 3.5 SIDEBAR COMPONENTS - FUTURE: components/_sidebars.scss */
+.info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.info-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-lg);
+}
+
+.info-card-title {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--dark-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+.info-list a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-list a:hover {
+    color: var(--primary-color);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.stat-item {
+    text-align: center;
+    padding: var(--spacing-md);
+    background: var(--light-color);
+    border-radius: var(--border-radius-sm);
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* 3.6 STATE COMPONENTS - FUTURE: components/_states.scss */
+.loading-state {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    color: var(--text-muted);
+}
+
+.empty-state {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    color: var(--text-muted);
+}
+
+/* ==========================================================================
+   4. PAGES
+   Home-specific styles (if needed in the future)
+   FUTURE: pages/_home.scss
+   ========================================================================== */
+
+/* 4.1 HOME PAGE SPECIFIC STYLES - FUTURE: pages/_home.scss */
+/* Currently no page-specific styles needed since it's a single-page app */
+/* Future: Add here any styles that are specific to the home page only */
+
+/* ==========================================================================
+   5. UTILITIES & RESPONSIVE
+   Utility classes, animations, responsive design
+   FUTURE: utilities/_animations.scss + utilities/_responsive.scss + utilities/_helpers.scss
+   ========================================================================== */
+
+/* 5.1 UTILITY CLASSES - FUTURE: utilities/_helpers.scss */
+.text-gradient {
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* 5.2 ANIMATIONS - FUTURE: utilities/_animations.scss */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 5.3 RESPONSIVE DESIGN - FUTURE: utilities/_responsive.scss */
+@media (max-width: 992px) {
+    .filter-sidebar {
+        position: static;
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .company-logo {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: var(--spacing-md) 0;
+    }
+
+    .hero-section {
+        padding: var(--spacing-xl) 0 var(--spacing-2xl);
+    }
+
+    .search-container {
+        padding: var(--spacing-md);
+    }
+
+    .filter-sidebar,
+    .jobs-content,
+    .info-card {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .results-info {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .job-meta {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .job-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-md);
+    }
+}
+
+/* ==========================================================================
+   MIGRATION GUIDE TO MODULAR CSS
+   
+   When you're ready to modularize, extract each section to its own file:
+   
+   1. BASE FILES:
+      - base/_variables.scss    → Section 1.1 (Variables & Custom Properties)
+      - base/_reset.scss        → Section 1.2 (Reset & Base Styles)  
+      - base/_typography.scss   → Section 1.3 (Typography)
+   
+   2. LAYOUT FILES:
+      - layout/_header.scss     → Section 2.1 (Header Layout)
+      - layout/_hero.scss       → Section 2.2 (Hero Section Layout)
+      - layout/_main.scss       → Section 2.3 (Main Container Layout)
+   
+   3. COMPONENT FILES:
+      - components/_forms.scss      → Section 3.1 (Form Components)
+      - components/_buttons.scss    → Section 3.2 (Button Components)  
+      - components/_filters.scss    → Section 3.3 (Filter Components)
+      - components/_cards.scss      → Section 3.4 (Card Components)
+      - components/_sidebars.scss   → Section 3.5 (Sidebar Components)
+      - components/_states.scss     → Section 3.6 (State Components)
+   
+   4. PAGE FILES:
+      - pages/_home.scss        → Section 4.1 (Home Page Specific)
+   
+   5. UTILITY FILES:
+      - utilities/_helpers.scss     → Section 5.1 (Utility Classes)
+      - utilities/_animations.scss  → Section 5.2 (Animations)
+      - utilities/_responsive.scss  → Section 5.3 (Responsive Design)
+   
+   MAIN SCSS FILE (main.scss):
+   @import 'base/variables';
+   @import 'base/reset';
+   @import 'base/typography';
+   @import 'layout/header';
+   @import 'layout/hero';
+   @import 'layout/main';
+   @import 'components/forms';
+   @import 'components/buttons';
+   @import 'components/filters';
+   @import 'components/cards';
+   @import 'components/sidebars';
+   @import 'components/states';
+   @import 'pages/home';
+   @import 'utilities/helpers';
+   @import 'utilities/animations';
+   @import 'utilities/responsive';
+   ========================================================================== */
