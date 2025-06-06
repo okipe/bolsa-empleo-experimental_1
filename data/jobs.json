@@ -1,0 +1,742 @@
+{
+    "meta": {
+        "version": "1.0",
+        "lastUpdated": "2024-06-05T15:30:00Z",
+        "totalJobs": 15,
+        "featuredJobs": 3
+    },
+    "jobs": [
+        {
+            "id": 1,
+            "titulo": "Practicante Pre-profesional de Comunicaciones",
+            "empresa": "Agencia de Marketing Digital Lima",
+            "industria": "comunicaciones",
+            "modalidad": "hibrido",
+            "ubicacion": "lima-callao",
+            "nivelExperiencia": "practicas-preprofesionales",
+            "descripcion": "Buscamos estudiante de Comunicaciones para apoyar en creación de contenido digital, gestión de redes sociales y campañas publicitarias. Perfecto para estudiantes que quieren experiencia real en comunicación corporativa.",
+            "requisitos": [
+                "Estudiante de 8vo ciclo en adelante de Comunicaciones",
+                "Conocimientos en redes sociales (Instagram, Facebook, TikTok)",
+                "Capacidad de redacción creativa",
+                "Manejo básico de Canva o herramientas de diseño",
+                "Disponibilidad de 30 horas semanales"
+            ],
+            "beneficios": [
+                "Subvención económica S/. 600",
+                "Capacitación en marketing digital",
+                "Certificado de prácticas pre-profesionales",
+                "Networking en el sector comunicaciones",
+                "Posibilidad de línea de carrera"
+            ],
+            "salario": {
+                "min": 600,
+                "max": 600,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://agenciamarketing.pe/practicas-comunicaciones",
+            "fechaPublicacion": "2024-06-03T09:00:00Z",
+            "fechaExpiracion": "2024-06-20T23:59:59Z",
+            "destacado": true,
+            "urgente": false,
+            "tags": [
+                "Comunicaciones",
+                "Redes Sociales",
+                "Marketing Digital",
+                "Canva",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "A",
+                "descripcion": "Agencia de marketing digital con 8 años en el mercado",
+                "tamano": "20-50 empleados",
+                "ubicacion": "Miraflores, Lima"
+            }
+        },
+        {
+            "id": 2,
+            "titulo": "Prácticas Profesionales en Contabilidad",
+            "empresa": "Estudio Contable & Tributario SAC",
+            "industria": "contabilidad",
+            "modalidad": "presencial",
+            "ubicacion": "lima-callao",
+            "nivelExperiencia": "practicas-profesionales",
+            "descripcion": "Oportunidad para egresado de Contabilidad para realizar prácticas profesionales. Trabajarás con declaraciones tributarias, libros contables y asesoría a empresas PYME. Experiencia invaluable en el sector contable.",
+            "requisitos": [
+                "Egresado o bachiller en Contabilidad",
+                "Conocimiento en normativa contable peruana",
+                "Manejo de software contable (CONCAR, SISCONT)",
+                "Excel nivel intermedio-avanzado",
+                "Disponibilidad tiempo completo"
+            ],
+            "beneficios": [
+                "Subvención S/. 1,000",
+                "Experiencia en estudio contable establecido",
+                "Capacitación en software especializado",
+                "Mentoring con contadores colegiados",
+                "Certificado de prácticas profesionales"
+            ],
+            "salario": {
+                "min": 1000,
+                "max": 1000,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://estudiocontable.pe/practicas-profesionales",
+            "fechaPublicacion": "2024-06-02T14:30:00Z",
+            "fechaExpiracion": "2024-06-25T23:59:59Z",
+            "destacado": false,
+            "urgente": true,
+            "tags": [
+                "Contabilidad",
+                "Tributario",
+                "CONCAR",
+                "Excel",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "E",
+                "descripcion": "Estudio contable con 15 años en el mercado",
+                "tamano": "10-30 empleados",
+                "ubicacion": "San Isidro, Lima"
+            }
+        },
+        {
+            "id": 3,
+            "titulo": "Voluntariado Profesional en Medicina",
+            "empresa": "Hospital Nacional Dos de Mayo",
+            "industria": "medicina",
+            "modalidad": "presencial",
+            "ubicacion": "lima-callao",
+            "nivelExperiencia": "voluntariado",
+            "descripcion": "Programa de voluntariado para estudiantes de Medicina de últimos años. Apoyo en consulta externa, emergencias y procedimientos básicos bajo supervisión médica. Excelente para completar horas de práctica clínica.",
+            "requisitos": [
+                "Estudiante de Medicina de 4to año en adelante",
+                "Promedio mínimo de 14",
+                "Disponibilidad de 40 horas semanales",
+                "Vacunas completas según protocolo hospitalario",
+                "Seguro estudiantil vigente"
+            ],
+            "beneficios": [
+                "Certificado de voluntariado (120 horas)",
+                "Experiencia clínica real",
+                "Supervisión de médicos especialistas",
+                "Acceso a capacitaciones médicas",
+                "Networking en el sector salud"
+            ],
+            "salario": {
+                "min": 0,
+                "max": 0,
+                "moneda": "PEN",
+                "periodo": "voluntario"
+            },
+            "enlace": "https://hospitaldosdemayo.gob.pe/voluntariado-medicina",
+            "fechaPublicacion": "2024-06-01T11:15:00Z",
+            "fechaExpiracion": "2024-06-15T23:59:59Z",
+            "destacado": true,
+            "urgente": true,
+            "tags": [
+                "Medicina",
+                "Voluntariado",
+                "Hospital",
+                "Clínica",
+                "Estudiantes"
+            ],
+            "empresa_info": {
+                "logo": "H",
+                "descripcion": "Hospital nacional de referencia",
+                "tamano": "1000+ empleados",
+                "ubicacion": "Cercado de Lima, Lima"
+            }
+        },
+        {
+            "id": 4,
+            "titulo": "Practicante Pre-profesional de Psicología",
+            "empresa": "Centro de Salud Mental Comunitaria",
+            "industria": "psicologia",
+            "modalidad": "presencial",
+            "ubicacion": "lima-callao",
+            "nivelExperiencia": "practicas-preprofesionales",
+            "descripcion": "Oportunidad para estudiante de Psicología en centro de salud mental. Apoyo en evaluaciones psicológicas, terapias grupales y programas comunitarios. Ideal para especializarse en psicología clínica y comunitaria.",
+            "requisitos": [
+                "Estudiante de Psicología de 8vo ciclo en adelante",
+                "Conocimientos en evaluación psicológica",
+                "Habilidades de comunicación y empatía",
+                "Interés en psicología clínica o comunitaria",
+                "Disponibilidad de 30 horas semanales"
+            ],
+            "beneficios": [
+                "Subvención S/. 700",
+                "Supervisión de psicólogos colegiados",
+                "Experiencia en casos reales",
+                "Capacitación en técnicas terapéuticas",
+                "Certificado de prácticas pre-profesionales"
+            ],
+            "salario": {
+                "min": 700,
+                "max": 700,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://centrosalud.gob.pe/practicas-psicologia",
+            "fechaPublicacion": "2024-06-04T16:45:00Z",
+            "fechaExpiracion": "2024-07-04T23:59:59Z",
+            "destacado": false,
+            "urgente": false,
+            "tags": [
+                "Psicología",
+                "Salud Mental",
+                "Terapia",
+                "Evaluación",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "C",
+                "descripcion": "Centro especializado en salud mental comunitaria",
+                "tamano": "20-50 empleados",
+                "ubicacion": "Villa El Salvador, Lima"
+            }
+        },
+        {
+            "id": 5,
+            "titulo": "Prácticas Profesionales en Ingeniería de Sistemas",
+            "empresa": "Banco de Crédito del Perú",
+            "industria": "ingenieria-sistemas",
+            "modalidad": "hibrido",
+            "ubicacion": "lima-callao",
+            "nivelExperiencia": "practicas-profesionales",
+            "descripcion": "Programa de prácticas para egresados de Ingeniería de Sistemas en el área de desarrollo de software bancario. Trabajarás con tecnologías como Java, Spring Boot y bases de datos Oracle en proyectos de innovación financiera.",
+            "requisitos": [
+                "Egresado o bachiller en Ingeniería de Sistemas",
+                "Conocimientos en Java y programación orientada a objetos",
+                "Familiaridad con bases de datos SQL",
+                "Inglés técnico básico",
+                "Disponibilidad tiempo completo"
+            ],
+            "beneficios": [
+                "Subvención S/. 1,200",
+                "Capacitación en tecnologías bancarias",
+                "Mentoring con ingenieros senior",
+                "Posibilidad de contratación directa",
+                "Seguro de prácticas incluido"
+            ],
+            "salario": {
+                "min": 1200,
+                "max": 1200,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://bcp.com.pe/carreras/practicas-sistemas",
+            "fechaPublicacion": "2024-06-05T10:20:00Z",
+            "fechaExpiracion": "2024-07-05T23:59:59Z",
+            "destacado": true,
+            "urgente": false,
+            "tags": [
+                "Ingeniería de Sistemas",
+                "Java",
+                "SQL",
+                "Desarrollo",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "B",
+                "descripcion": "Banco líder en innovación financiera",
+                "tamano": "1000+ empleados",
+                "ubicacion": "San Isidro, Lima"
+            }
+        },
+        {
+            "id": 6,
+            "titulo": "Practicante Pre-profesional de Derecho",
+            "empresa": "Estudio Jurídico Torres & Asociados",
+            "industria": "derecho",
+            "modalidad": "presencial",
+            "ubicacion": "lima-callao",
+            "nivelExperiencia": "practicas-preprofesionales",
+            "descripcion": "Buscamos estudiante de Derecho para apoyo en investigación jurídica, elaboración de escritos y asistencia en audiencias. Especialización en derecho corporativo y laboral con abogados experimentados.",
+            "requisitos": [
+                "Estudiante de Derecho de 8vo ciclo en adelante",
+                "Excelente capacidad de redacción",
+                "Conocimientos en derecho corporativo o laboral",
+                "Manejo de Office intermedio",
+                "Disponibilidad de 6 horas diarias"
+            ],
+            "beneficios": [
+                "Subvención S/. 800",
+                "Experiencia en casos reales",
+                "Capacitación en práctica jurídica",
+                "Networking legal profesional",
+                "Certificado de prácticas pre-profesionales"
+            ],
+            "salario": {
+                "min": 800,
+                "max": 800,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://estudiojuridico.pe/practicas-derecho",
+            "fechaPublicacion": "2024-06-03T13:10:00Z",
+            "fechaExpiracion": "2024-06-30T23:59:59Z",
+            "destacado": false,
+            "urgente": false,
+            "tags": [
+                "Derecho",
+                "Jurídico",
+                "Corporativo",
+                "Laboral",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "E",
+                "descripcion": "Estudio jurídico especializado en derecho empresarial",
+                "tamano": "15-30 empleados",
+                "ubicacion": "San Isidro, Lima"
+            }
+        },
+        {
+            "id": 7,
+            "titulo": "Voluntariado en Enfermería",
+            "empresa": "Hospital Nacional Edgardo Rebagliati",
+            "industria": "enfermeria",
+            "modalidad": "presencial",
+            "ubicacion": "lima-callao",
+            "nivelExperiencia": "voluntariado",
+            "descripcion": "Programa de voluntariado para estudiantes de Enfermería. Apoyo en cuidados básicos de pacientes, administración de medicamentos bajo supervisión y educación sanitaria en comunidades.",
+            "requisitos": [
+                "Estudiante de Enfermería de 3er año en adelante",
+                "Certificado de vacunación completa",
+                "Disponibilidad de 35 horas semanales",
+                "Habilidades de comunicación",
+                "Seguro estudiantil vigente"
+            ],
+            "beneficios": [
+                "Certificado de voluntariado (150 horas)",
+                "Experiencia clínica supervisada",
+                "Capacitación en procedimientos de enfermería",
+                "Acceso a programas de especialización",
+                "Networking en sector salud"
+            ],
+            "salario": {
+                "min": 0,
+                "max": 0,
+                "moneda": "PEN",
+                "periodo": "voluntario"
+            },
+            "enlace": "https://rebagliati.gob.pe/voluntariado-enfermeria",
+            "fechaPublicacion": "2024-06-04T08:30:00Z",
+            "fechaExpiracion": "2024-07-04T23:59:59Z",
+            "destacado": false,
+            "urgente": false,
+            "tags": [
+                "Enfermería",
+                "Voluntariado",
+                "Hospital",
+                "Cuidados",
+                "Estudiantes"
+            ],
+            "empresa_info": {
+                "logo": "H",
+                "descripcion": "Hospital de alta complejidad - EsSalud",
+                "tamano": "1000+ empleados",
+                "ubicacion": "Jesús María, Lima"
+            }
+        },
+        {
+            "id": 8,
+            "titulo": "Prácticas Profesionales en Ingeniería Industrial",
+            "empresa": "Corporación Aceros Arequipa",
+            "industria": "ingenieria-industrial",
+            "modalidad": "presencial",
+            "ubicacion": "arequipa",
+            "nivelExperiencia": "practicas-profesionales",
+            "descripcion": "Oportunidad para egresado de Ingeniería Industrial en el área de mejora de procesos y control de calidad. Participarás en proyectos de optimización de la cadena productiva y gestión de la calidad.",
+            "requisitos": [
+                "Egresado o bachiller en Ingeniería Industrial",
+                "Conocimientos en Lean Manufacturing",
+                "Manejo de herramientas estadísticas",
+                "AutoCAD básico (deseable)",
+                "Disponibilidad tiempo completo"
+            ],
+            "beneficios": [
+                "Subvención S/. 1,100",
+                "Experiencia en industria siderúrgica",
+                "Capacitación en mejora de procesos",
+                "Certificación en Lean Six Sigma",
+                "Posibilidad de contratación"
+            ],
+            "salario": {
+                "min": 1100,
+                "max": 1100,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://acerosarequipa.com/practicas-industrial",
+            "fechaPublicacion": "2024-06-02T12:00:00Z",
+            "fechaExpiracion": "2024-06-25T23:59:59Z",
+            "destacado": false,
+            "urgente": false,
+            "tags": [
+                "Ingeniería Industrial",
+                "Lean Manufacturing",
+                "Calidad",
+                "Procesos",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "C",
+                "descripcion": "Líder en la industria siderúrgica peruana",
+                "tamano": "500-1000 empleados",
+                "ubicacion": "Arequipa, Arequipa"
+            }
+        },
+        {
+            "id": 9,
+            "titulo": "Practicante Pre-profesional de Administración",
+            "empresa": "Saga Falabella",
+            "industria": "administracion",
+            "modalidad": "hibrido",
+            "ubicacion": "la-libertad",
+            "nivelExperiencia": "practicas-preprofesionales",
+            "descripcion": "Únete a nuestro programa de prácticas en el área de recursos humanos y administración. Apoyo en procesos de reclutamiento, gestión de personal y análisis de indicadores de gestión.",
+            "requisitos": [
+                "Estudiante de Administración de 8vo ciclo en adelante",
+                "Excel nivel intermedio",
+                "Habilidades de comunicación",
+                "Orientación a resultados",
+                "Disponibilidad de 30 horas semanales"
+            ],
+            "beneficios": [
+                "Subvención S/. 750",
+                "Experiencia en retail moderno",
+                "Capacitación en gestión de personas",
+                "Descuentos en tiendas Saga",
+                "Línea de carrera definida"
+            ],
+            "salario": {
+                "min": 750,
+                "max": 750,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://sagafalabella.com.pe/practicas-administracion",
+            "fechaPublicacion": "2024-06-05T14:15:00Z",
+            "fechaExpiracion": "2024-07-05T23:59:59Z",
+            "destacado": false,
+            "urgente": false,
+            "tags": [
+                "Administración",
+                "Recursos Humanos",
+                "Retail",
+                "Gestión",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "S",
+                "descripcion": "Líder en retail y centros comerciales",
+                "tamano": "1000+ empleados",
+                "ubicacion": "Trujillo, La Libertad"
+            }
+        },
+        {
+            "id": 10,
+            "titulo": "Voluntariado Profesional en Educación",
+            "empresa": "ONG Enseña Perú",
+            "industria": "educacion",
+            "modalidad": "presencial",
+            "ubicacion": "cusco",
+            "nivelExperiencia": "voluntariado",
+            "descripcion": "Programa de voluntariado educativo para estudiantes de Educación. Apoyo en enseñanza a niños en situación vulnerable, desarrollo de material didáctico y programas de reforzamiento académico.",
+            "requisitos": [
+                "Estudiante de Educación o carreras afines",
+                "Vocación de servicio y trabajo social",
+                "Disponibilidad fines de semana",
+                "Habilidades pedagógicas",
+                "Compromiso de 6 meses mínimo"
+            ],
+            "beneficios": [
+                "Certificado de voluntariado educativo",
+                "Experiencia en educación social",
+                "Capacitación en pedagogía moderna",
+                "Networking en sector educación",
+                "Movilidad incluida"
+            ],
+            "salario": {
+                "min": 0,
+                "max": 0,
+                "moneda": "PEN",
+                "periodo": "voluntario"
+            },
+            "enlace": "https://ensenaperu.org/voluntariado",
+            "fechaPublicacion": "2024-06-03T09:45:00Z",
+            "fechaExpiracion": "2024-06-28T23:59:59Z",
+            "destacado": false,
+            "urgente": true,
+            "tags": [
+                "Educación",
+                "Voluntariado",
+                "Enseñanza",
+                "Social",
+                "Estudiantes"
+            ],
+            "empresa_info": {
+                "logo": "O",
+                "descripcion": "ONG dedicada a mejorar la educación en zonas vulnerables",
+                "tamano": "50-100 empleados",
+                "ubicacion": "Cusco, Cusco"
+            }
+        },
+        {
+            "id": 11,
+            "titulo": "Practicante Pre-profesional de Marketing",
+            "empresa": "Compañía Cervecera Ambev",
+            "industria": "marketing",
+            "modalidad": "hibrido",
+            "ubicacion": "piura",
+            "nivelExperiencia": "practicas-preprofesionales",
+            "descripcion": "Oportunidad en el área de marketing de una de las cerveceras más grandes del país. Apoyo en campañas publicitarias, investigación de mercado y análisis del comportamiento del consumidor.",
+            "requisitos": [
+                "Estudiante de Marketing o Comunicaciones de 8vo ciclo",
+                "Conocimientos en investigación de mercado",
+                "Creatividad y pensamiento estratégico",
+                "Manejo de redes sociales",
+                "Disponibilidad de 6 horas diarias"
+            ],
+            "beneficios": [
+                "Subvención S/. 900",
+                "Experiencia en industria de consumo masivo",
+                "Capacitación en marketing estratégico",
+                "Acceso a eventos corporativos",
+                "Posibilidad de trabajo en provincia"
+            ],
+            "salario": {
+                "min": 900,
+                "max": 900,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://ambev.com.pe/practicas-marketing",
+            "fechaPublicacion": "2024-06-04T11:20:00Z",
+            "fechaExpiracion": "2024-07-04T23:59:59Z",
+            "destacado": false,
+            "urgente": false,
+            "tags": [
+                "Marketing",
+                "Investigación",
+                "Consumo Masivo",
+                "Publicidad",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "A",
+                "descripcion": "Compañía cervecera líder en Latinoamérica",
+                "tamano": "500-1000 empleados",
+                "ubicacion": "Piura, Piura"
+            }
+        },
+        {
+            "id": 12,
+            "titulo": "Prácticas Profesionales en Arquitectura",
+            "empresa": "Estudio de Arquitectura Urbanismo SAC",
+            "industria": "arquitectura",
+            "modalidad": "presencial",
+            "ubicacion": "lambayeque",
+            "nivelExperiencia": "practicas-profesionales",
+            "descripcion": "Programa para egresados de Arquitectura en proyectos residenciales y comerciales. Participación en diseño arquitectónico, planificación urbana y supervisión de obras desde la etapa conceptual hasta la construcción.",
+            "requisitos": [
+                "Egresado o bachiller en Arquitectura",
+                "Manejo avanzado de AutoCAD, SketchUp",
+                "Conocimientos en Revit (deseable)",
+                "Portfolio de proyectos académicos",
+                "Disponibilidad tiempo completo"
+            ],
+            "beneficios": [
+                "Subvención S/. 1,000",
+                "Experiencia en proyectos reales",
+                "Capacitación en software BIM",
+                "Supervisión de arquitectos colegiados",
+                "Participación en concursos de arquitectura"
+            ],
+            "salario": {
+                "min": 1000,
+                "max": 1000,
+                "moneda": "PEN",
+                "periodo": "mensual"
+            },
+            "enlace": "https://estudioarquitectura.pe/practicas",
+            "fechaPublicacion": "2024-06-01T15:30:00Z",
+            "fechaExpiracion": "2024-06-30T23:59:59Z",
+            "destacado": false,
+            "urgente": false,
+            "tags": [
+                "Arquitectura",
+                "AutoCAD",
+                "SketchUp",
+                "Diseño",
+                "Prácticas"
+            ],
+            "empresa_info": {
+                "logo": "E",
+                "descripcion": "Estudio especializado en arquitectura residencial y comercial",
+                "tamano": "20-50 empleados",
+                "ubicacion": "Chiclayo, Lambayeque"
+            }
+        }
+    ],
+    "taxonomies": {
+        "industrias": [
+            {
+                "id": "comunicaciones",
+                "label": "Comunicaciones",
+                "icon": "bi-megaphone",
+                "count": 1
+            },
+            {
+                "id": "contabilidad",
+                "label": "Contabilidad",
+                "icon": "bi-calculator",
+                "count": 1
+            },
+            {
+                "id": "medicina",
+                "label": "Medicina",
+                "icon": "bi-heart-pulse",
+                "count": 1
+            },
+            {
+                "id": "psicologia",
+                "label": "Psicología",
+                "icon": "bi-brain",
+                "count": 1
+            },
+            {
+                "id": "ingenieria-sistemas",
+                "label": "Ingeniería de Sistemas",
+                "icon": "bi-laptop",
+                "count": 1
+            },
+            {
+                "id": "derecho",
+                "label": "Derecho",
+                "icon": "bi-scale",
+                "count": 1
+            },
+            {
+                "id": "enfermeria",
+                "label": "Enfermería",
+                "icon": "bi-hospital",
+                "count": 1
+            },
+            {
+                "id": "ingenieria-industrial",
+                "label": "Ingeniería Industrial",
+                "icon": "bi-gear",
+                "count": 1
+            },
+            {
+                "id": "administracion",
+                "label": "Administración",
+                "icon": "bi-building",
+                "count": 1
+            },
+            {
+                "id": "educacion",
+                "label": "Educación",
+                "icon": "bi-book",
+                "count": 1
+            },
+            {
+                "id": "marketing",
+                "label": "Marketing",
+                "icon": "bi-graph-up",
+                "count": 1
+            },
+            {
+                "id": "arquitectura",
+                "label": "Arquitectura",
+                "icon": "bi-house",
+                "count": 1
+            }
+        ],
+        "modalidades": [
+            {
+                "id": "remoto",
+                "label": "Remoto",
+                "icon": "bi-house",
+                "count": 0
+            },
+            {
+                "id": "presencial",
+                "label": "Presencial",
+                "icon": "bi-building",
+                "count": 7
+            },
+            {
+                "id": "hibrido",
+                "label": "Híbrido",
+                "icon": "bi-shuffle",
+                "count": 5
+            }
+        ],
+        "ubicaciones": [
+            { "id": "amazonas", "label": "Amazonas", "count": 0 },
+            { "id": "ancash", "label": "Áncash", "count": 0 },
+            { "id": "apurimac", "label": "Apurímac", "count": 0 },
+            { "id": "arequipa", "label": "Arequipa", "count": 1 },
+            { "id": "ayacucho", "label": "Ayacucho", "count": 0 },
+            { "id": "cajamarca", "label": "Cajamarca", "count": 0 },
+            { "id": "cusco", "label": "Cusco", "count": 1 },
+            { "id": "huancavelica", "label": "Huancavelica", "count": 0 },
+            { "id": "huanuco", "label": "Huánuco", "count": 0 },
+            { "id": "ica", "label": "Ica", "count": 0 },
+            { "id": "junin", "label": "Junín", "count": 0 },
+            { "id": "la-libertad", "label": "La Libertad", "count": 1 },
+            { "id": "lambayeque", "label": "Lambayeque", "count": 1 },
+            { "id": "lima-callao", "label": "Lima y Callao", "count": 7 },
+            { "id": "loreto", "label": "Loreto", "count": 0 },
+            { "id": "madre-de-dios", "label": "Madre de Dios", "count": 0 },
+            { "id": "moquegua", "label": "Moquegua", "count": 0 },
+            { "id": "pasco", "label": "Pasco", "count": 0 },
+            { "id": "piura", "label": "Piura", "count": 1 },
+            { "id": "puno", "label": "Puno", "count": 0 },
+            { "id": "san-martin", "label": "San Martín", "count": 0 },
+            { "id": "tacna", "label": "Tacna", "count": 0 },
+            { "id": "tumbes", "label": "Tumbes", "count": 0 }
+        ],
+        "niveles_experiencia": [
+            {
+                "id": "practicas-preprofesionales",
+                "label": "Prácticas Pre-profesionales",
+                "count": 6
+            },
+            {
+                "id": "practicas-profesionales",
+                "label": "Prácticas Profesionales",
+                "count": 3
+            },
+            { "id": "voluntariado", "label": "Voluntariado", "count": 3 }
+        ],
+        "carreras": [
+            { "id": "comunicaciones", "label": "Comunicaciones", "count": 1 },
+            { "id": "contabilidad", "label": "Contabilidad", "count": 1 },
+            { "id": "medicina", "label": "Medicina", "count": 1 },
+            { "id": "psicologia", "label": "Psicología", "count": 1 },
+            {
+                "id": "ingenieria-sistemas",
+                "label": "Ingeniería de Sistemas",
+                "count": 1
+            },
+            { "id": "derecho", "label": "Derecho", "count": 1 },
+            { "id": "enfermeria", "label": "Enfermería", "count": 1 },
+            {
+                "id": "ingenieria-industrial",
+                "label": "Ingeniería Industrial",
+                "count": 1
+            },
+            { "id": "administracion", "label": "Administración", "count": 1 },
+            { "id": "educacion", "label": "Educación", "count": 1 },
+            { "id": "marketing", "label": "Marketing", "count": 1 },
+            { "id": "arquitectura", "label": "Arquitectura", "count": 1 }
+        ]
+    }
+}

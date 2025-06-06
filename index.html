@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Portal de empleos para estudiantes y graduados en Lima, Perú"
+            content="Portal de prácticas preprofesionales, profesionales y voluntariados para estudiantes universitarios en Lima, Perú"
         />
         <title>ChapaTusPracticas.com</title>
 
@@ -51,10 +51,12 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#empleos">Empleos</a>
+                            <a class="nav-link" href="#practicas">Prácticas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#empresas">Empresas</a>
+                            <a class="nav-link" href="#voluntariados"
+                                >Voluntariados</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#recursos">Recursos</a>
@@ -79,11 +81,14 @@
                     <div class="col-lg-8 text-center hero-content">
                         <h1 class="hero-title">
                             ¿Buscas tus
-                            <span class="text-warning">prácticas preprofesionales?</span>
+                            <span class="text-warning"
+                                >prácticas preprofesionales?</span
+                            >
                         </h1>
                         <p class="hero-subtitle">
-                            Descubre oportunidades de prácticas ideales para
-                            estudiantes y graduados. ¡Encuentra tu oportunidad y postula!
+                            Encuentra prácticas preprofesionales, profesionales
+                            y voluntariados ideales para estudiantes
+                            universitarios y egresados en Lima, Perú.
                         </p>
 
                         <div class="search-container mx-auto">
@@ -91,7 +96,7 @@
                                 <input
                                     type="text"
                                     class="form-control search-input flex-grow-1"
-                                    placeholder="Busca tu trabajo ideal aquí..."
+                                    placeholder="Busca por carrera, empresa o palabra clave..."
                                     id="heroSearchInput"
                                 />
                                 <button
@@ -125,127 +130,156 @@
                                 Limpiar todo
                             </a>
 
-                            <!-- Ubicación -->
+                            <!-- Ubicación (Dropdown) -->
                             <div class="filter-section">
                                 <div class="filter-section-title">
                                     Ubicaciones
                                 </div>
-                                <div class="filter-option">
-                                    <input
-                                        type="checkbox"
-                                        class="filter-checkbox"
-                                        id="lima"
-                                    />
-                                    <label for="lima">Lima</label>
-                                    <span class="filter-count">(128)</span>
+                                <select
+                                    class="form-select filter-select"
+                                    id="ubicacionSelect"
+                                >
+                                    <option value="">
+                                        Todos los departamentos
+                                    </option>
+                                    <option value="amazonas">Amazonas</option>
+                                    <option value="ancash">Áncash</option>
+                                    <option value="apurimac">Apurímac</option>
+                                    <option value="arequipa">Arequipa</option>
+                                    <option value="ayacucho">Ayacucho</option>
+                                    <option value="cajamarca">Cajamarca</option>
+                                    <option value="cusco">Cusco</option>
+                                    <option value="huancavelica">
+                                        Huancavelica
+                                    </option>
+                                    <option value="huanuco">Huánuco</option>
+                                    <option value="ica">Ica</option>
+                                    <option value="junin">Junín</option>
+                                    <option value="la-libertad">
+                                        La Libertad
+                                    </option>
+                                    <option value="lambayeque">
+                                        Lambayeque
+                                    </option>
+                                    <option value="lima-callao">
+                                        Lima y Callao
+                                    </option>
+                                    <option value="loreto">Loreto</option>
+                                    <option value="madre-de-dios">
+                                        Madre de Dios
+                                    </option>
+                                    <option value="moquegua">Moquegua</option>
+                                    <option value="pasco">Pasco</option>
+                                    <option value="piura">Piura</option>
+                                    <option value="puno">Puno</option>
+                                    <option value="san-martin">
+                                        San Martín
+                                    </option>
+                                    <option value="tacna">Tacna</option>
+                                    <option value="tumbes">Tumbes</option>
+                                    <option value="ucayali">Ucayali</option>
+                                </select>
+                            </div>
+
+                            <!-- Tipo de Oportunidad -->
+                            <div class="filter-section">
+                                <div class="filter-section-title">
+                                    Tipo de Oportunidad
                                 </div>
                                 <div class="filter-option">
                                     <input
                                         type="checkbox"
                                         class="filter-checkbox"
-                                        id="arequipa"
+                                        id="practicas-preprofesionales"
                                     />
-                                    <label for="arequipa">Arequipa</label>
-                                    <span class="filter-count">(24)</span>
+                                    <label for="practicas-preprofesionales"
+                                        >Prácticas Pre-profesionales</label
+                                    >
+                                    <span class="filter-count">(6)</span>
                                 </div>
                                 <div class="filter-option">
                                     <input
                                         type="checkbox"
                                         class="filter-checkbox"
-                                        id="trujillo"
+                                        id="practicas-profesionales"
                                     />
-                                    <label for="trujillo">Trujillo</label>
-                                    <span class="filter-count">(18)</span>
+                                    <label for="practicas-profesionales"
+                                        >Prácticas Profesionales</label
+                                    >
+                                    <span class="filter-count">(3)</span>
+                                </div>
+                                <div class="filter-option">
+                                    <input
+                                        type="checkbox"
+                                        class="filter-checkbox"
+                                        id="voluntariado"
+                                    />
+                                    <label for="voluntariado"
+                                        >Voluntariado</label
+                                    >
+                                    <span class="filter-count">(3)</span>
                                 </div>
                             </div>
 
-                            <!-- Tipo de Trabajo -->
+                            <!-- Modalidad -->
                             <div class="filter-section">
                                 <div class="filter-section-title">
-                                    Tipo de Trabajo
+                                    Modalidad de Trabajo
                                 </div>
                                 <div class="filter-option">
                                     <input
                                         type="checkbox"
                                         class="filter-checkbox"
-                                        id="fulltime"
+                                        id="presencial"
                                     />
-                                    <label for="fulltime"
-                                        >Tiempo Completo</label
-                                    >
-                                    <span class="filter-count">(85)</span>
+                                    <label for="presencial">Presencial</label>
+                                    <span class="filter-count">(7)</span>
                                 </div>
                                 <div class="filter-option">
                                     <input
                                         type="checkbox"
                                         class="filter-checkbox"
-                                        id="parttime"
+                                        id="hibrido"
                                     />
-                                    <label for="parttime">Medio Tiempo</label>
-                                    <span class="filter-count">(42)</span>
+                                    <label for="hibrido">Híbrido</label>
+                                    <span class="filter-count">(5)</span>
                                 </div>
                                 <div class="filter-option">
                                     <input
                                         type="checkbox"
                                         class="filter-checkbox"
-                                        id="remote"
+                                        id="remoto"
                                     />
-                                    <label for="remote">Remoto</label>
-                                    <span class="filter-count">(56)</span>
-                                </div>
-                                <div class="filter-option">
-                                    <input
-                                        type="checkbox"
-                                        class="filter-checkbox"
-                                        id="internship"
-                                    />
-                                    <label for="internship">Prácticas</label>
-                                    <span class="filter-count">(23)</span>
+                                    <label for="remoto">Remoto</label>
+                                    <span class="filter-count">(0)</span>
                                 </div>
                             </div>
 
-                            <!-- Nivel de Experiencia -->
+                            <!-- Subvención/Remuneración -->
                             <div class="filter-section">
                                 <div class="filter-section-title">
-                                    Nivel de Experiencia
+                                    Subvención/Remuneración
                                 </div>
                                 <div class="filter-option">
                                     <input
-                                        type="checkbox"
+                                        type="radio"
+                                        name="salary"
                                         class="filter-checkbox"
-                                        id="entry"
+                                        id="todos-salarios"
+                                        checked
                                     />
-                                    <label for="entry">Sin experiencia</label>
-                                    <span class="filter-count">(35)</span>
+                                    <label for="todos-salarios">Todos</label>
                                 </div>
                                 <div class="filter-option">
                                     <input
-                                        type="checkbox"
+                                        type="radio"
+                                        name="salary"
                                         class="filter-checkbox"
-                                        id="junior"
+                                        id="voluntario"
                                     />
-                                    <label for="junior"
-                                        >Junior (1-2 años)</label
+                                    <label for="voluntario"
+                                        >Voluntario (S/. 0)</label
                                     >
-                                    <span class="filter-count">(67)</span>
-                                </div>
-                                <div class="filter-option">
-                                    <input
-                                        type="checkbox"
-                                        class="filter-checkbox"
-                                        id="mid"
-                                    />
-                                    <label for="mid"
-                                        >Intermedio (3-5 años)</label
-                                    >
-                                    <span class="filter-count">(42)</span>
-                                </div>
-                            </div>
-
-                            <!-- Salario Esperado -->
-                            <div class="filter-section">
-                                <div class="filter-section-title">
-                                    Salario Esperado
                                 </div>
                                 <div class="filter-option">
                                     <input
@@ -255,7 +289,7 @@
                                         id="salary1"
                                     />
                                     <label for="salary1"
-                                        >Menos de S/. 2,000</label
+                                        >S/. 500 - S/. 800</label
                                     >
                                 </div>
                                 <div class="filter-option">
@@ -266,7 +300,7 @@
                                         id="salary2"
                                     />
                                     <label for="salary2"
-                                        >S/. 2,000 - S/. 4,000</label
+                                        >S/. 800 - S/. 1,000</label
                                     >
                                 </div>
                                 <div class="filter-option">
@@ -277,89 +311,90 @@
                                         id="salary3"
                                     />
                                     <label for="salary3"
-                                        >S/. 4,000 - S/. 8,000</label
-                                    >
-                                </div>
-                                <div class="filter-option">
-                                    <input
-                                        type="radio"
-                                        name="salary"
-                                        class="filter-checkbox"
-                                        id="salary4"
-                                    />
-                                    <label for="salary4"
-                                        >Más de S/. 8,000</label
+                                        >S/. 1,000 - S/. 1,200</label
                                     >
                                 </div>
 
                                 <div class="salary-range">
-                                    <small class="text-muted"
+                                    <small class="text-muted mb-2 d-block"
                                         >Rango personalizado</small
                                     >
                                     <div class="salary-inputs">
                                         <input
                                             type="number"
                                             class="salary-input"
+                                            id="salaryMin"
                                             placeholder="Min"
                                             min="0"
+                                            max="2000"
                                         />
                                         <input
                                             type="number"
                                             class="salary-input"
+                                            id="salaryMax"
                                             placeholder="Max"
                                             min="0"
+                                            max="2000"
                                         />
+                                    </div>
+                                    <div class="salary-buttons mt-2">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary btn-sm me-2"
+                                            id="applySalaryRange"
+                                        >
+                                            <i class="bi bi-check"></i> Aplicar
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-secondary btn-sm"
+                                            id="clearSalaryRange"
+                                        >
+                                            <i class="bi bi-x"></i> Limpiar
+                                        </button>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Especialidades -->
+                            <!-- Carrera/Especialidad (Lista desplegable) -->
                             <div class="filter-section">
                                 <div class="filter-section-title">
-                                    Especialidades de Trabajo
+                                    Carrera/Especialidad
                                 </div>
-                                <div class="filter-option">
-                                    <input
-                                        type="checkbox"
-                                        class="filter-checkbox"
-                                        id="frontend"
-                                    />
-                                    <label for="frontend"
-                                        >Desarrollo Frontend</label
-                                    >
-                                    <span class="filter-count">(18)</span>
-                                </div>
-                                <div class="filter-option">
-                                    <input
-                                        type="checkbox"
-                                        class="filter-checkbox"
-                                        id="backend"
-                                    />
-                                    <label for="backend"
-                                        >Desarrollo Backend</label
-                                    >
-                                    <span class="filter-count">(24)</span>
-                                </div>
-                                <div class="filter-option">
-                                    <input
-                                        type="checkbox"
-                                        class="filter-checkbox"
-                                        id="marketing"
-                                    />
-                                    <label for="marketing"
-                                        >Marketing Digital</label
-                                    >
-                                    <span class="filter-count">(31)</span>
-                                </div>
-                                <div class="filter-option">
-                                    <input
-                                        type="checkbox"
-                                        class="filter-checkbox"
-                                        id="design"
-                                    />
-                                    <label for="design">Diseño UX/UI</label>
-                                    <span class="filter-count">(15)</span>
-                                </div>
+                                <select
+                                    class="form-select filter-select"
+                                    id="carreraSelect"
+                                >
+                                    <option value="">Todas las carreras</option>
+                                    <option value="comunicaciones">
+                                        Comunicaciones
+                                    </option>
+                                    <option value="contabilidad">
+                                        Contabilidad
+                                    </option>
+                                    <option value="medicina">Medicina</option>
+                                    <option value="psicologia">
+                                        Psicología
+                                    </option>
+                                    <option value="ingenieria-sistemas">
+                                        Ingeniería de Sistemas
+                                    </option>
+                                    <option value="derecho">Derecho</option>
+                                    <option value="enfermeria">
+                                        Enfermería
+                                    </option>
+                                    <option value="ingenieria-industrial">
+                                        Ingeniería Industrial
+                                    </option>
+                                    <option value="administracion">
+                                        Administración
+                                    </option>
+                                    <option value="educacion">Educación</option>
+                                    <option value="marketing">Marketing</option>
+                                    <option value="arquitectura">
+                                        Arquitectura
+                                    </option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -372,22 +407,22 @@
                                 <div class="results-info">
                                     <div>
                                         <div class="results-count">
-                                            Desarrollador Senior iOS
+                                            Oportunidades Disponibles
                                         </div>
                                         <div class="results-meta">
-                                            Trabajo remoto • S/. 4,000 - S/.
-                                            12,000 • 14 postulantes
+                                            Cargando oportunidades...
                                         </div>
                                     </div>
-                                    <select class="sort-select">
+                                    <select class="sort-select" id="sortSelect">
                                         <option value="recent">
                                             Más recientes
                                         </option>
                                         <option value="salary">
-                                            Mejor salario
+                                            Mayor subvención
                                         </option>
-                                        <option value="relevance">
-                                            Más relevantes
+                                        <option value="type">Por tipo</option>
+                                        <option value="career">
+                                            Por carrera
                                         </option>
                                     </select>
                                 </div>
@@ -395,366 +430,20 @@
 
                             <!-- Job Listings -->
                             <div class="job-listings" id="jobListings">
-                                <!-- Job Card 1 -->
-                                <div class="job-card fade-in">
-                                    <div class="job-header">
-                                        <div class="company-logo">A</div>
-                                        <div class="job-info">
-                                            <h3 class="job-title">
-                                                Desarrollador Senior iOS
-                                            </h3>
-                                            <div class="job-meta">
-                                                <span class="job-meta-item"
-                                                    >Trabajo remoto</span
-                                                >
-                                                <span
-                                                    class="job-meta-item job-salary"
-                                                    >S/. 4,000 - S/.
-                                                    12,000</span
-                                                >
-                                                <span class="job-meta-item"
-                                                    >14 postulantes</span
-                                                >
-                                            </div>
-                                            <small class="text-muted"
-                                                >Cairo, Egypt</small
-                                            >
-                                        </div>
-                                        <button class="bookmark-btn">
-                                            <i class="bi bi-bookmark"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="job-description">
-                                        Lorem Ipsum is simply dummy text of the
-                                        printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard
-                                        dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type
-                                        and scrambled it to make a type specimen
-                                        book. It has survived not only five
-                                        centuries.
-                                    </div>
-
-                                    <div class="job-tags">
-                                        <span class="job-tag">Kotlin</span>
-                                        <span class="job-tag featured"
-                                            >iOS Developer</span
-                                        >
-                                        <span class="job-tag"
-                                            >Software Engineer</span
-                                        >
-                                    </div>
-
-                                    <div class="job-actions">
-                                        <a href="#" class="btn-apply">
-                                            <i
-                                                class="bi bi-box-arrow-up-right"
-                                            ></i>
-                                            Aplicar Ahora
-                                        </a>
-                                        <div class="job-stats">
-                                            <span
-                                                ><i class="bi bi-clock"></i>
-                                                Publicado hace 2 días</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Job Card 2 -->
-                                <div class="job-card fade-in">
-                                    <div class="job-header">
-                                        <div class="company-logo">A</div>
-                                        <div class="job-info">
-                                            <h3 class="job-title">
-                                                Analista de Marketing Digital
-                                            </h3>
-                                            <div class="job-meta">
-                                                <span class="job-meta-item"
-                                                    >Trabajo híbrido</span
-                                                >
-                                                <span
-                                                    class="job-meta-item job-salary"
-                                                    >S/. 2,800 - S/. 3,500</span
-                                                >
-                                                <span class="job-meta-item"
-                                                    >8 postulantes</span
-                                                >
-                                            </div>
-                                            <small class="text-muted"
-                                                >San Isidro, Lima</small
-                                            >
-                                        </div>
-                                        <button class="bookmark-btn">
-                                            <i class="bi bi-bookmark"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="job-description">
-                                        Únete a nuestro equipo de marketing como
-                                        analista digital. Trabajarás con Google
-                                        Analytics, Facebook Ads, y otras
-                                        plataformas para optimizar campañas
-                                        digitales. Excelente oportunidad para
-                                        crecer profesionalmente.
-                                    </div>
-
-                                    <div class="job-tags">
-                                        <span class="job-tag"
-                                            >Google Analytics</span
-                                        >
-                                        <span class="job-tag"
-                                            >Facebook Ads</span
-                                        >
-                                        <span class="job-tag">SEO</span>
-                                        <span class="job-tag">Marketing</span>
-                                    </div>
-
-                                    <div class="job-actions">
-                                        <a href="#" class="btn-apply">
-                                            <i
-                                                class="bi bi-box-arrow-up-right"
-                                            ></i>
-                                            Aplicar Ahora
-                                        </a>
-                                        <div class="job-stats">
-                                            <span
-                                                ><i class="bi bi-clock"></i>
-                                                Publicado hace 5 días</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Job Card 3 -->
-                                <div class="job-card fade-in">
-                                    <div class="job-header">
-                                        <div class="company-logo">B</div>
-                                        <div class="job-info">
-                                            <h3 class="job-title">
-                                                Practicante de Finanzas
-                                            </h3>
-                                            <div class="job-meta">
-                                                <span class="job-meta-item"
-                                                    >Presencial</span
-                                                >
-                                                <span
-                                                    class="job-meta-item job-salary"
-                                                    >S/. 1,200</span
-                                                >
-                                                <span class="job-meta-item"
-                                                    >25 postulantes</span
-                                                >
-                                            </div>
-                                            <small class="text-muted"
-                                                >La Molina, Lima</small
-                                            >
-                                        </div>
-                                        <button class="bookmark-btn">
-                                            <i class="bi bi-bookmark-fill"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="job-description">
-                                        Oportunidad de prácticas profesionales
-                                        en el área de finanzas corporativas.
-                                        Aprenderás sobre análisis financiero,
-                                        elaboración de reportes y modelado
-                                        financiero. Programa de 6 meses con
-                                        posibilidad de contratación.
-                                    </div>
-
-                                    <div class="job-tags">
-                                        <span class="job-tag"
-                                            >Excel Avanzado</span
-                                        >
-                                        <span class="job-tag"
-                                            >Análisis Financiero</span
-                                        >
-                                        <span class="job-tag">PowerBI</span>
-                                        <span class="job-tag featured"
-                                            >Prácticas</span
-                                        >
-                                    </div>
-
-                                    <div class="job-actions">
-                                        <a href="#" class="btn-apply">
-                                            <i
-                                                class="bi bi-box-arrow-up-right"
-                                            ></i>
-                                            Aplicar Ahora
-                                        </a>
-                                        <div class="job-stats">
-                                            <span
-                                                ><i class="bi bi-clock"></i>
-                                                Publicado hace 1 día</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Job Card 4 -->
-                                <div class="job-card fade-in">
-                                    <div class="job-header">
-                                        <div class="company-logo">T</div>
-                                        <div class="job-info">
-                                            <h3 class="job-title">
-                                                Desarrollador Frontend Junior
-                                            </h3>
-                                            <div class="job-meta">
-                                                <span class="job-meta-item"
-                                                    >Remoto</span
-                                                >
-                                                <span
-                                                    class="job-meta-item job-salary"
-                                                    >S/. 2,500 - S/. 3,500</span
-                                                >
-                                                <span class="job-meta-item"
-                                                    >12 postulantes</span
-                                                >
-                                            </div>
-                                            <small class="text-muted"
-                                                >Lima, Perú</small
-                                            >
-                                        </div>
-                                        <button class="bookmark-btn">
-                                            <i class="bi bi-bookmark"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="job-description">
-                                        Buscamos un desarrollador frontend
-                                        junior para unirse a nuestro equipo
-                                        dinámico. Trabajarás con tecnologías
-                                        modernas como React, TypeScript y
-                                        Tailwind CSS. Ofrecemos capacitación
-                                        continua y ambiente colaborativo.
-                                    </div>
-
-                                    <div class="job-tags">
-                                        <span class="job-tag">React</span>
-                                        <span class="job-tag">JavaScript</span>
-                                        <span class="job-tag">TypeScript</span>
-                                        <span class="job-tag">CSS</span>
-                                        <span class="job-tag featured"
-                                            >Junior</span
-                                        >
-                                    </div>
-
-                                    <div class="job-actions">
-                                        <a href="#" class="btn-apply">
-                                            <i
-                                                class="bi bi-box-arrow-up-right"
-                                            ></i>
-                                            Aplicar Ahora
-                                        </a>
-                                        <div class="job-stats">
-                                            <span
-                                                ><i class="bi bi-clock"></i>
-                                                Publicado hace 3 días</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Job Card 5 -->
-                                <div class="job-card fade-in">
-                                    <div class="job-header">
-                                        <div class="company-logo">C</div>
-                                        <div class="job-info">
-                                            <h3 class="job-title">
-                                                Diseñador UX/UI
-                                            </h3>
-                                            <div class="job-meta">
-                                                <span class="job-meta-item"
-                                                    >Híbrido</span
-                                                >
-                                                <span
-                                                    class="job-meta-item job-salary"
-                                                    >S/. 3,000 - S/. 4,500</span
-                                                >
-                                                <span class="job-meta-item"
-                                                    >6 postulantes</span
-                                                >
-                                            </div>
-                                            <small class="text-muted"
-                                                >Miraflores, Lima</small
-                                            >
-                                        </div>
-                                        <button class="bookmark-btn">
-                                            <i class="bi bi-bookmark"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="job-description">
-                                        Buscamos diseñador UX/UI para crear
-                                        experiencias digitales excepcionales.
-                                        Trabajarás en proyectos web y móviles
-                                        para clientes diversos. Ambiente
-                                        creativo con oportunidades de
-                                        crecimiento profesional.
-                                    </div>
-
-                                    <div class="job-tags">
-                                        <span class="job-tag">Figma</span>
-                                        <span class="job-tag">Adobe XD</span>
-                                        <span class="job-tag">Prototipado</span>
-                                        <span class="job-tag"
-                                            >Design Thinking</span
-                                        >
-                                    </div>
-
-                                    <div class="job-actions">
-                                        <a href="#" class="btn-apply">
-                                            <i
-                                                class="bi bi-box-arrow-up-right"
-                                            ></i>
-                                            Aplicar Ahora
-                                        </a>
-                                        <div class="job-stats">
-                                            <span
-                                                ><i class="bi bi-clock"></i>
-                                                Publicado hace 1 semana</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Pagination -->
-                            <div class="p-3 border-top">
-                                <nav aria-label="Job listings pagination">
-                                    <ul
-                                        class="pagination justify-content-center mb-0"
+                                <!-- Loading state -->
+                                <div class="loading-state">
+                                    <div
+                                        class="spinner-border text-primary"
+                                        role="status"
                                     >
-                                        <li class="page-item disabled">
-                                            <span class="page-link"
-                                                >Anterior</span
-                                            >
-                                        </li>
-                                        <li class="page-item active">
-                                            <span class="page-link">1</span>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">2</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">3</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <span class="page-link">...</span>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">12</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#"
-                                                >Siguiente</a
-                                            >
-                                        </li>
-                                    </ul>
-                                </nav>
+                                        <span class="visually-hidden"
+                                            >Cargando...</span
+                                        >
+                                    </div>
+                                    <p class="mt-2">
+                                        Cargando oportunidades...
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -773,67 +462,84 @@
                                             font-size: 2rem;
                                         "
                                     >
-                                        EP
+                                        CTP
                                     </div>
                                     <h5 class="info-card-title mb-1">
-                                        Portal EmpleosPE
+                                        ChapaTusPracticas
                                     </h5>
                                     <p class="text-muted small">
-                                        Tu plataforma de empleos en Perú
+                                        Tu plataforma de prácticas en Perú
                                     </p>
                                 </div>
 
                                 <div class="stats-grid">
                                     <div class="stat-item">
-                                        <span class="stat-number">1,247</span>
+                                        <span
+                                            class="stat-number"
+                                            id="totalOpportunities"
+                                            >12</span
+                                        >
                                         <span class="stat-label"
-                                            >Empleos Activos</span
+                                            >Oportunidades</span
                                         >
                                     </div>
                                     <div class="stat-item">
-                                        <span class="stat-number">380</span>
+                                        <span
+                                            class="stat-number"
+                                            id="totalCompanies"
+                                            >10</span
+                                        >
                                         <span class="stat-label">Empresas</span>
                                     </div>
                                     <div class="stat-item">
-                                        <span class="stat-number">15K</span>
-                                        <span class="stat-label"
-                                            >Candidatos</span
+                                        <span
+                                            class="stat-number"
+                                            id="totalCareers"
+                                            >12</span
                                         >
+                                        <span class="stat-label">Carreras</span>
                                     </div>
                                     <div class="stat-item">
-                                        <span class="stat-number">2,340</span>
+                                        <span
+                                            class="stat-number"
+                                            id="totalStudents"
+                                            >500+</span
+                                        >
                                         <span class="stat-label"
-                                            >Contrataciones</span
+                                            >Estudiantes</span
                                         >
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Skills & Expertise (Adapted to Categories) -->
+                            <!-- Carreras Populares -->
                             <div class="info-card">
                                 <h6 class="info-card-title">
-                                    Categorías Populares
+                                    Carreras Populares
                                 </h6>
                                 <div class="d-flex flex-wrap gap-2">
-                                    <span class="job-tag">Tecnología</span>
+                                    <span class="job-tag">Medicina</span>
+                                    <span class="job-tag">Ing. Sistemas</span>
+                                    <span class="job-tag">Contabilidad</span>
+                                    <span class="job-tag">Psicología</span>
+                                    <span class="job-tag">Derecho</span>
+                                    <span class="job-tag">Administración</span>
                                     <span class="job-tag">Marketing</span>
-                                    <span class="job-tag">Finanzas</span>
-                                    <span class="job-tag">Diseño</span>
-                                    <span class="job-tag">Ventas</span>
-                                    <span class="job-tag">Ingeniería</span>
-                                    <span class="job-tag">Educación</span>
-                                    <span class="job-tag">Salud</span>
+                                    <span class="job-tag">Enfermería</span>
                                 </div>
                             </div>
 
-                            <!-- Links Section -->
+                            <!-- Enlaces Útiles -->
                             <div class="info-card">
                                 <h6 class="info-card-title">Enlaces Útiles</h6>
                                 <ul class="info-list">
                                     <li>
                                         <a href="#consejos"
-                                            >Consejos para el CV</a
+                                            >Consejos para Prácticas</a
                                         >
+                                    </li>
+                                    <li>
+                                        <a href="#cv">Cómo hacer tu CV</a>
                                     </li>
                                     <li>
                                         <a href="#entrevistas"
@@ -841,29 +547,24 @@
                                         >
                                     </li>
                                     <li>
-                                        <a href="#salarios"
-                                            >Guía de Salarios 2024</a
+                                        <a href="#derechos"
+                                            >Derechos del Practicante</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="#empresas"
-                                            >Directorio de Empresas</a
+                                        <a href="#universidades"
+                                            >Convenios con Universidades</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="#blog"
-                                            >Blog de Empleabilidad</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a href="#eventos"
-                                            >Eventos de Networking</a
+                                        <a href="#testimonios"
+                                            >Testimonios de Estudiantes</a
                                         >
                                     </li>
                                 </ul>
                             </div>
 
-                            <!-- Support Section -->
+                            <!-- Soporte y Ayuda -->
                             <div class="info-card">
                                 <h6 class="info-card-title">Soporte y Ayuda</h6>
                                 <ul class="info-list">
@@ -907,8 +608,9 @@
                                     ¿Eres una empresa?
                                 </h6>
                                 <p class="small mb-3 opacity-75">
-                                    Publica tus ofertas de trabajo y encuentra
-                                    el talento que necesitas.
+                                    Publica tus oportunidades de prácticas y
+                                    encuentra el talento estudiantil que
+                                    necesitas.
                                 </p>
                                 <a
                                     href="#empresa-registro"
@@ -920,7 +622,7 @@
                                             rgba(255, 255, 255, 0.3);
                                     "
                                 >
-                                    Publicar Empleo
+                                    Publicar Oportunidad
                                 </a>
                             </div>
                         </div>
@@ -939,8 +641,9 @@
                             ChapaTusPracticas
                         </h6>
                         <p class="small mb-0">
-                            Tu plataforma de prácticas para estudiantes y
-                            graduados en Perú.
+                            Tu plataforma de prácticas preprofesionales,
+                            profesionales y voluntariados para estudiantes en
+                            Perú.
                         </p>
                     </div>
                     <div class="col-md-6 text-md-end">
@@ -959,7 +662,8 @@
                             ></a>
                         </div>
                         <p class="small mb-0 mt-2">
-                            © 2024 EmpleosPE. Todos los derechos reservados.
+                            © 2024 ChapaTusPracticas. Todos los derechos
+                            reservados.
                         </p>
                     </div>
                 </div>
